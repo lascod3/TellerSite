@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Styling/index.css">
+
+    <!-- Link for the Teller App Font -->
     <link href="https://fonts.cdnfonts.com/css/shining-diamond-neon" rel="stylesheet">
+
+    <!-- Link for Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+
+     <!-- Link for the Font-family -->
     <link href="https://fonts.cdnfonts.com/css/shepherdy" rel="stylesheet">
-                
-                
-        <script src="Scripting/script.js" defer> </script> 
+    
+    <script src="Scripting/script.js" defer> </script> 
 </head>
 <body>
  
@@ -29,7 +34,7 @@
              <label> <span class="material-symbols-outlined icon">lock</span> 
             <input type="password" id="password" placeholder="password..."required>
              </label>
-             <aside><button> <span class="material-symbols-outlined">login</span> </button></aside>
+             <aside><button><a href="dashBoard.php" > <span class="material-symbols-outlined">login</span> </button></a> </aside>
             
        </form>
        </section>
