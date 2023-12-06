@@ -64,7 +64,6 @@ form {
 form aside {
   width: none;
   min-height: none;
-  /* background: yellow; */
   text-align: center;
 }
 
@@ -78,7 +77,7 @@ form label {
 }
 
 span.icon {
-  /* color: rgb(243, 243, 243); */
+  color: rgb(22, 29, 44);
 }
 
 input[type="email"],
