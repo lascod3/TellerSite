@@ -10,19 +10,19 @@ body {
 }
 
 nav {
+  visibility: hidden;
+}
+.navToggle {
+  visibility: visible;
+  /* display: flex; */
   background: rgb(33, 34, 41);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-  display: inline-flex;
-  flex-direction: column;
   min-height: 100vh;
-  min-width: 25vh;
-  padding-right:1rem;
+  padding-right: 1rem;
   padding-left: 1rem;
   padding-top: 1rem;
-  /* padding: 2rem; */
   color: rgb(243, 243, 243);
   position: absolute;
-
   left: 0;
 }
 
@@ -30,7 +30,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  gap: 1rem;
+  gap: 2.5rem;
   list-style: none;
 }
 
@@ -38,10 +38,17 @@ nav ul li {
   display: flex;
   justify-content: left;
   align-items: center;
+  width: 8rem;
 }
 
 nav ul li:first-child {
   background: rgb(14, 121, 171);
   padding: 0.3rem;
   border-radius: 0.2rem;
+}
+nav ul li:last-child {
+
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
 }

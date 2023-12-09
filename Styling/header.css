@@ -26,11 +26,20 @@ header section button:first-child {
 
 span[data-value="icons"] {
   color: rgba(234, 235, 238, 255);
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  cursor: pointer;
 }
 
 span.closeIcon {
   display: none;
+}
+
+span.closeIconToggle {
+  display: block;
+  color: rgb(231, 231, 231);
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 header section button:last-child {
