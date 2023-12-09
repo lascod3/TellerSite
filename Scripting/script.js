@@ -1,4 +1,8 @@
-const languages = ["Welcome Teller", "This is your Transaction Portal", "Making Transactions easier"];
+const languages = [
+  "Welcome Teller",
+  "This is your Transaction Portal",
+  "Making Transactions easier",
+];
 const typedText = document.querySelector(".typed-word");
 const typingDelay = 300;
 const erasingDelay = 200;

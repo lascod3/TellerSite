@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(55, 65, 82, 255);
+  padding: 1rem;
+}
+
+header section {
+  min-width: 100vw;
+  display: flex;
+  background: rgb(33, 34, 41);
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+header section button:first-child {
+  position: absolute;
+  display: flex;
+  left: 13px;
+  background: none;
+  border: none;
+}
+
+span[data-value="icons"] {
+  color: rgba(234, 235, 238, 255);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+span.closeIcon {
+  display: none;
+}
+
+header section button:last-child {
+  position: absolute;
+  right: 5px;
+  background: none;
+  border: none;
+}
