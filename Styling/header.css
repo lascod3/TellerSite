@@ -48,3 +48,37 @@ header section button:last-child {
   background: none;
   border: none;
 }
+
+aside.profile-content {
+  display: none;
+}
+
+aside.asideToggle {
+  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 70px;
+  width: 10rem;
+  min-height: 20vh;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  background: rgb(33, 34, 41);
+}
+
+aside.profile-content ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+aside.profile-content ul li {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  align-items: center;
+  width: 8rem;
+  color: rgb(231, 231, 231);
+}

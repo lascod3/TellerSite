@@ -1,9 +1,9 @@
 const defaultIcon = document.querySelector("span.defaultIcon");
 const closeBtn = document.querySelector("span.closeIcon");
 const nav = document.querySelector("nav");
-const button = document.querySelector("header section button:first-child");
+const menuButton = document.querySelector("header section button:first-child");
 
-button.addEventListener("click", (event) => {
+menuButton.addEventListener("click", (event) => {
   if (event.target.classList.contains("defaultIcon")) {
     defaultIcon.classList.replace("defaultIcon", "closeIcon");
     closeBtn.classList.add("closeIconToggle");
@@ -17,4 +17,15 @@ button.addEventListener("click", (event) => {
     closeBtn.classList.remove("closeIconToggle");
     nav.classList.remove("navToggle");
   }
+});
+
+
+// Profile Button
+const proButton = document.querySelector("header section button:last-child");
+const aside = document.querySelector("aside.profile-content  ");
+proButton.addEventListener("click", (event) => {
+   if ( proButton) {
+     aside.classList.toggle("asideToggle");
+   }
+
 });

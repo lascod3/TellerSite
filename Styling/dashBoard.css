@@ -18,9 +18,10 @@ nav {
   background: rgb(33, 34, 41);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   min-height: 100vh;
-  padding-right: 1rem;
+  width: 50rem;
+  /* padding-right: 1rem;
   padding-left: 1rem;
-  padding-top: 1rem;
+  padding-top: 1rem; */
   color: rgb(243, 243, 243);
   position: absolute;
   left: 0;
@@ -39,6 +40,7 @@ nav ul li {
   justify-content: left;
   align-items: center;
   width: 8rem;
+  font-size: clamp(1rem, 3vw, 1.2rem);
 }
 
 nav ul li:first-child {
@@ -46,9 +48,8 @@ nav ul li:first-child {
   padding: 0.3rem;
   border-radius: 0.2rem;
 }
-nav ul li:last-child {
-
+/* nav ul li:last-child {
   position: absolute;
   left: 20px;
   bottom: 10px;
-}
+} */
