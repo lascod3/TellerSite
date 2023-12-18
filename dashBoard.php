@@ -45,16 +45,18 @@ include 'DBconnection.php';
         </header>
 
         <?php
-
+    // Selects and sums all balance and put them in a colum call sum 
         $sql = "SELECT sum(balance) AS sum FROM `TellerCrud`";
         $result = mysqli_query($con, $sql);
 
+        // Keeps fetching with while loop till it gets to the end
         while ($row = mysqli_fetch_assoc($result)) {
             $output = "£ " . " " . $row['sum'];
         }
         ?>
 
         <?php
+        // Returns the number of rows from the table, which was then set to represent the total of customers
         $sql = "SELECT * FROM `TellerCrud`";
         $result = mysqli_query($con, $sql);
 
