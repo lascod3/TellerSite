@@ -47,7 +47,7 @@ include 'DBconnection.php';
             <form method="post">
                 <input type="search" placeholder="search for Customer" name="search" />
                 <button type="submit" name="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
-                <!-- <button type="submit" name="submit">click</button> -->
+            
             </form>
         </div>
 
