@@ -69,6 +69,8 @@ include 'DBconnection.php';
                 </thead>
                 <tbody>
                     <?php
+
+                    //Fetch all the data from the database using select all then populate the the table with the values
                     $sql = "SELECT * FROM `TellerCrud`";
                     $result = mysqli_query($con, $sql);
                     if ($result) {

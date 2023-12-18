@@ -80,7 +80,6 @@ include 'DBconnection.php';
                 </li>
                 <li>
 
-
                     <span class="material-symbols-outlined icon2">groups</span>
                     <span> Total Customer</span>
                     <span>

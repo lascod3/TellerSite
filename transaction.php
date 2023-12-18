@@ -36,7 +36,7 @@ include 'DBconnect.php';
         </aside>
            <h1> Transaction</h1>
         </header>
-    
+
         <form  method="POST">
             <aside> 
                 <input type="text" placeholder="Steve" name="firstName" required autocomplete="off" />
