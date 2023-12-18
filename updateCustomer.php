@@ -13,12 +13,12 @@ if (isset($_POST['submit'])) {
     $genderIn = $_POST['gender'];
 
     $sql = "UPDATE `TellerCrud` SET accountNumber =$accountNumber, balance=$balanceIn, firstName ='$firstNameIn', lastName='$lastNameIn', email='$emailIn', mobile='$mobileIn', gender='$genderIn' WHERE id=$id";
-
+    // Excute query for update
     $result = mysqli_query($con, $sql);
     if ($result) {
         header("Location: customerAccounts.php?");
     } else {
-        echo "Failed " . mysqli_error($con);
+        echo "Failed to excute" . mysqli_error($con);
     }
 }
 ?>
