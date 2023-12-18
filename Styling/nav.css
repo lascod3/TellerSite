@@ -1,0 +1,105 @@
+nav {
+  min-width: 15vw;
+  min-height: 100vh;
+  background: rgb(37, 36, 43);
+}
+
+/* Navigation List */
+nav ul {
+  list-style: none;
+  min-width: inherit;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+nav ul a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(251, 252, 252, 255);
+}
+
+nav ul li:first-child {
+  color: rgba(251, 252, 252, 255);
+  background: rgba(25, 43, 161, 255);
+  padding: 0.5rem;
+}
+
+span.icons {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: rgba(251, 252, 252, 255);
+}
+/* 
+nav {
+  display: flex;
+  justify-content: center;
+  background: rgb(33, 34, 41);
+  min-width: 15vw;
+  min-height: 100vh;
+  color: rgb(243, 243, 243);
+  padding: 1.5rem;
+}
+
+.navToggle {
+  display: flex;
+  justify-content: center;
+  background: rgb(33, 34, 41);
+  min-width: 15rem;
+  min-height: 100vh;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  color: rgb(243, 243, 243);
+  z-index: 3;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  list-style: none;
+  padding: 2rem;
+}
+
+nav ul li {
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+  min-width: inherit;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+nav ul li:first-child {
+  background: rgb(14, 121, 171);
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+} */
+
+/* Mobile Screen Size */
+@media screen and (max-width: 768px) {
+  main {
+    padding: none;
+    /* min-width: 85vw; */
+  }
+
+  nav {
+    display: none;
+  }
+
+  main ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .navToggle {
+    position: fixed;
+    list-style: none;
+    min-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

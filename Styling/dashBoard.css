@@ -3,53 +3,83 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html,
 body {
-  font-family: "Shepherdy", sans-serif;
-  background: rgba(35, 39, 46, 255);
-  min-height: 100vh;
+  scroll-behavior: smooth;
+  transition: all 2s ease;
 }
 
-nav {
-  visibility: hidden;
-}
-.navToggle {
-  visibility: visible;
-  /* display: flex; */
-  background: rgb(33, 34, 41);
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-  min-height: 100vh;
-  width: 50rem;
-  /* padding-right: 1rem;
-  padding-left: 1rem;
-  padding-top: 1rem; */
-  color: rgb(243, 243, 243);
-  position: absolute;
-  left: 0;
+main ul {
+  min-height: 25vh;
+  min-width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background: rgb(231, 231, 231);
 }
 
-nav ul {
+main ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+ul li span.icon1 {
+  font-size: clamp(2rem, 7vw, 3em);
+  color: rgb(99, 99, 99);
+}
+
+ul li span.icon2 {
+  font-size: clamp(2rem, 7vw, 3em);
+  /* color: rgb(231,231,231); */
+}
+
+main ul li:nth-child(1) {
+  border-radius: 10%;
+  background: rgb(231, 231, 231);
+  border-left: 3px ridge rgb(37, 36, 43);
+  border-top: 3px ridge rgb(37, 36, 43);
+  border-right: 3px ridge rgba(25, 43, 161, 255);
+  border-bottom: 3px ridge rgba(25, 43, 161, 255);
+}
+
+main ul li:nth-child(2) {
+  border-radius: 10%;
+  border-left: 3px ridge rgb(37, 36, 43);
+  border-top: 3px ridge rgb(37, 36, 43);
+  border-right: 3px ridge rgba(25, 43, 161, 255);
+  border-bottom: 3px ridge rgba(25, 43, 161, 255);
+}
+
+main ul li:nth-child(3) {
+  border-radius: 50%;
+  padding: 75px;
+  background: gray;
+}
+
+/* Mobile Screen Size */
+/* @media screen and (max-width: 768px) {
+  main {
+    padding: none;
+  
+  }
+
+  main ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+ 
+   .navToggle {
+  list-style: none;
+  min-width: inherit;
+  min-height: 35vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  gap: 2.5rem;
-  list-style: none;
-}
-
-nav ul li {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  width: 8rem;
-  font-size: clamp(1rem, 3vw, 1.2rem);
-}
-
-nav ul li:first-child {
-  background: rgb(14, 121, 171);
-  padding: 0.3rem;
-  border-radius: 0.2rem;
-}
-/* nav ul li:last-child {
-  position: absolute;
-  left: 20px;
-  bottom: 10px;
+  justify-content: space-evenly;
+   }
 } */

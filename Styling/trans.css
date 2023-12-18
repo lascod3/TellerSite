@@ -1,0 +1,53 @@
+body {
+  background: rgba(251, 252, 252, 255);
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+
+
+form {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+form button {
+  font-size: clamp(0.7rem, 5vw, 1em);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
+  background: rgb(37, 36, 43);
+  color: rgba(251, 252, 252, 255);
+  padding: 0.5rem 2rem;
+  border: 3px ridge rgb(37, 36, 43);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+label {
+  font-size: clamp(0.8rem, 5vw, 1.2em);
+}
+
+
+input[type="text"] {
+  min-width: clamp(10rem, 10vw, 15rem);
+  min-height: 2rem;
+  font-size: clamp(1rem, 5vw, 1.2em);
+}
+
+input[type="number"] {
+  max-width: clamp(12rem, 10vw, 20rem);
+  max-height: 2.5rem;
+  font-size: clamp(1rem, 5vw, 1.2em);
+}
+form button:last-child {
+  background: rgba(25, 43, 161, 255);
+  border: 3px ridge rgba(25, 43, 161, 255);
+}
+
+@media screen and (min-width: 768px) {
+  
+}

@@ -1,33 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(251, 252, 252, 255);
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
 header {
+  background: rgb(37, 36, 43);
+  min-height: 15vh;
+  min-width: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(55, 65, 82, 255);
+  color: rgba(251, 252, 252, 255);
   padding: 1rem;
 }
-
-header section {
-  min-width: 100vw;
-  display: flex;
-  background: rgb(33, 34, 41);
-  padding: 2rem;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+header aside {
+  padding: 0.5rem;
 }
-
-header section button:first-child {
-  position: absolute;
-  display: flex;
-  left: 13px;
+header aside button {
   background: none;
   border: none;
+  visibility: hidden;
+  color: rgb(231, 231, 231);
 }
 
-span[data-value="icons"] {
-  color: rgba(234, 235, 238, 255);
+header button span.defaultIcon,
+span.closeIcon {
   font-size: clamp(1.5rem, 5vw, 2rem);
-  cursor: pointer;
 }
 
 span.closeIcon {
@@ -35,50 +44,15 @@ span.closeIcon {
 }
 
 span.closeIconToggle {
+  display: flex;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+span.openToggle {
   display: block;
   color: rgb(231, 231, 231);
   background: none;
   border: none;
   cursor: pointer;
-}
-
-header section button:last-child {
-  position: absolute;
-  right: 5px;
-  background: none;
-  border: none;
-}
-
-aside.profile-content {
-  display: none;
-}
-
-aside.asideToggle {
-  display: inline-flex;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  right: 10px;
-  top: 70px;
-  width: 10rem;
-  min-height: 20vh;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-  background: rgb(33, 34, 41);
-}
-
-aside.profile-content ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
-}
-
-aside.profile-content ul li {
-  display: flex;
-  justify-content: left;
-  text-align: left;
-  align-items: center;
-  width: 8rem;
-  color: rgb(231, 231, 231);
+  font-size: 4em;
 }

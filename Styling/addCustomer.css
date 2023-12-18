@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  /* background: rgb(37, 36, 43); */
+}
+
+form {
+  min-height: 50vh;
+  min-width: 80vw;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: left;
+  gap: 2.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+form aside:nth-child(3) {
+  display: flex;
+  gap: 5rem;
+}
+
+input[type="text"] {
+  min-width: clamp(15rem, 10vw, 20rem);
+  min-height: 2rem;
+  font-size: clamp(1rem, 5vw, 1.2em);
+}
+input[type="email"] {
+  min-width: clamp(20rem, 10vw, 30rem);
+  min-height: 2rem;
+  font-size: clamp(1rem, 5vw, 1.2em);
+}
+
+label {
+  font-size: clamp(0.8rem, 5vw, 1.2em);
+}
+
+input[type="number"] {
+  max-width: clamp(12rem, 10vw, 20rem);
+  max-height: 2.5rem;
+  font-size: clamp(1rem, 5vw, 1.2em);
+}
+
+input[type="radio"] {
+  font-size: clamp(0.5rem, 5vw, 1em);
+  accent-color: rgb(37, 36, 43);
+  min-width: clamp(0.5rem, 5vw, 0.8em);
+  min-height: clamp(0.5rem, 5vw, 0.8em);
+}
+
+/* Form Button */
+aside:last-child {
+  display: flex;
+  gap: 1rem;
+}
+
+form button {
+  font-size: clamp(0.7rem, 5vw, 1em);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
+  background: rgb(37, 36, 43);
+  color: rgba(251, 252, 252, 255);
+  padding: 0.5rem 2rem;
+  border: 3px ridge rgb(37, 36, 43);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+form button:last-child {
+  background: rgba(25, 43, 161, 255);
+  border: 3px ridge rgba(25, 43, 161, 255);
+}

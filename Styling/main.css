@@ -1,4 +1,21 @@
-main{
-background: red;
-padding: 50px;
+main {
+  padding: 0.2rem 0.5rem;
+  min-width: 85vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgba(251, 252, 252, 255);
+}
+
+/* Rules for Mobile Screen Size */
+@media screen and (max-width: 768px) {
+  header aside button { 
+    visibility: visible;
+  }
+  header {
+    min-width: 100vw;
+    display: flex;
+    justify-content: left;
+    gap: 5rem;
+  }
 }
