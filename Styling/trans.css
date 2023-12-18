@@ -15,6 +15,7 @@ form {
   align-items: center;
   gap: 3rem;
   padding: 2rem;
+  background: rgb(231,231,231);
 }
 
 form button {
