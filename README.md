@@ -20,7 +20,6 @@ https://github.com/lask0d3/TellerSite/assets/57866950/0da3a83f-53ae-4bc9-8cb9-95
 
 <img width="1433" alt="Screenshot 2023-12-20 at 01 42 28" src="https://github.com/lask0d3/TellerSite/assets/57866950/852f7a15-386b-4b27-924b-17f222db8645">
 
-<img width="1433" alt="Screenshot 2023-12-20 at 02 45 13" src="https://github.com/lask0d3/TellerSite/assets/57866950/d8f1f2df-b1e7-4e4b-8550-c6f7009d974d">
 
 
 
