@@ -13,7 +13,10 @@ Steps to launch it
 
 
 
-https://github.com/lask0d3/TellerSite/assets/57866950/0da3a83f-53ae-4bc9-8cb9-95bfea6f2717
+
+https://github.com/lask0d3/TellerSite/assets/57866950/f37ec392-8f85-49d6-9e1f-d18e40630195
+
+
 
 <img width="1426" alt="Screenshot 2023-12-18 at 22 14 22" src="https://github.com/lask0d3/TellerSite/assets/57866950/e079a608-5390-48f8-a2a4-183955874f75">
 
