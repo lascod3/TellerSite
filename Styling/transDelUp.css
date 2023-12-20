@@ -5,17 +5,23 @@ body {
   min-height: 100vh;
 }
 
-
-
-form {
-  min-height: 75vh;
+section.form {
+  width: inherit;
+  min-height: 83vh;
+  background: rgb(231, 231, 231);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
   gap: 3rem;
   padding: 2rem;
-  background: rgb(231,231,231);
+  border: 0.2rem ridge rgba(25, 43, 161, 255);
+  filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.9)) ;
 }
 
 form button {
@@ -28,10 +34,10 @@ form button {
   border: 3px ridge rgb(37, 36, 43);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
+
 label {
   font-size: clamp(0.8rem, 5vw, 1.2em);
 }
-
 
 input[type="text"] {
   min-width: clamp(10rem, 10vw, 15rem);
@@ -44,11 +50,26 @@ input[type="number"] {
   max-height: 2.5rem;
   font-size: clamp(1rem, 5vw, 1.2em);
 }
+
+input[type="email"] {
+  /* min-width: 100%; */
+  min-height: 2rem;
+  font-size: clamp(0.8rem, 5vw, 1em);
+}
+
 form button:last-child {
   background: rgba(25, 43, 161, 255);
   border: 3px ridge rgba(25, 43, 161, 255);
 }
 
-@media screen and (min-width: 768px) {
-  
+form aside a {
+  text-decoration: none;
+  font-size: clamp(0.7rem, 5vw, 1em);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
+  color: rgba(251, 252, 252, 255);
+  padding: 0.5rem 2rem;
+  border: 3px ridge rgb(37, 36, 43);
+  background: rgba(25, 43, 161, 255);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 }

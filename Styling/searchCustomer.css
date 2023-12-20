@@ -7,43 +7,28 @@ body {
   display: flex;
 }
 
-/* header {
-  background: rgb(37, 36, 43);
-  min-height: 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(251, 252, 252, 255);
-  padding: 1rem;
-} */
-
-main {
-  padding: 0.2rem 0.5rem;
-  min-width: 85vw;
-  min-height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  background: rgba(251, 252, 252, 255);
-}
-
 div {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 }
 form {
   display: flex;
-  padding: 0.5rem;
+  justify-content: right;
+  padding: 0.6rem;
   background: rgb(37, 36, 43);
+  border-radius: 1rem;
+  filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.9));
 }
 
 div button {
   font-size: clamp(0.7rem, 5vw, 1em);
   padding: 0.5rem 1rem;
+  border: none;
+  background: none;
   cursor: pointer;
+  background: none;
 }
 
 section.tableWrapper div {
@@ -57,14 +42,17 @@ section.tableWrapper div {
 
 section.tableWrapper div span {
   font-size: clamp(5rem, 10vw, 7rem);
+  
 }
 
 input[type="search"] {
   font-size: clamp(0.7rem, 5vw, 1em);
   padding: 0.5rem 1rem;
-  width: clamp(10rem, 25vw, 20rem);
+  width: clamp(10rem, 35vw, 30rem);
 }
-
+form i {
+  color: rgb(231, 231, 231);
+}
 table {
   border-collapse: collapse;
   width: 100%;
@@ -75,6 +63,10 @@ table td {
   padding: 1em;
   text-align: left;
   color: black;
+}
+
+td i.fa-solid{
+ color: rgba(25, 43, 161, 255);
 }
 thead tr {
   background: rgb(188, 188, 190);
@@ -96,15 +88,13 @@ tbody tr td:last-child {
   cursor: pointer;
 }
 
-i:last-child {
-  color: rgba(25, 43, 161, 255);
-}
+
 
 a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 768px) {
   table {
     border: 2px solid rgb(44, 44, 44);
   }

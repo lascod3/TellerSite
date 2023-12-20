@@ -21,17 +21,29 @@ main div button:first-child {
   border: 5px ridge rgba(25, 43, 161, 255);
   cursor: pointer;
 }
-
-aside button:last-child {
+div aside {
+  display: flex;
+  justify-content: right;
+  padding: 0.5rem;
+  background: rgb(37, 36, 43);
+  border-radius: 0.5rem;
+}
+div aside button:last-child {
   font-size: clamp(0.7rem, 5vw, 1em);
   padding: 0.5rem 1rem;
   cursor: pointer;
+  border: none;
+  background: rgb(37, 36, 43);
 }
 
 input[type="search"] {
-  font-size: clamp(0.7rem, 5vw, 1em);
-  padding: 0.5rem 1rem;
+  font-size: clamp(0.5rem, 5vw, 0.8em);
 }
+
+div i.fa-solid {
+ color: rgb(231,231,231);;
+}
+
 
 table {
   border-collapse: collapse;
@@ -42,6 +54,10 @@ table th,
 table td {
   padding: 1em;
   text-align: left;
+}
+
+td i.fa-solid{
+ color: rgba(25, 43, 161, 255);
 }
 thead tr {
   background: rgb(188, 188, 190);
@@ -63,9 +79,7 @@ tbody tr td:last-child {
   cursor: pointer;
 }
 
-i:last-child {
-  color: rgba(25, 43, 161, 255);
-}
+
 
 a {
   text-decoration: none;

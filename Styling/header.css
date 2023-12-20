@@ -4,25 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
-  background: rgba(251, 252, 252, 255);
-  display: flex;
-  min-width: 100vw;
-  min-height: 100vh;
-}
-
 h1 {
   font-size: clamp(1.5rem, 5vw, 2rem);
 }
 header {
   background: rgb(37, 36, 43);
   min-height: 15vh;
-  min-width: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgba(251, 252, 252, 255);
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 header aside {
   padding: 0.5rem;

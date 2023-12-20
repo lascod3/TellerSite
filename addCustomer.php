@@ -35,9 +35,9 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="Styling/header.css">
     <link rel="stylesheet" href="Styling/main.css">
     <link rel="stylesheet" href="Styling/nav.css">
-    <link rel="stylesheet" href="Styling/addCustomer.css">
-    <script src="Scripting/header.js" defer> </script>
+    <link rel="stylesheet" href="Styling/transDelUp.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="Scripting/header.js" defer> </script>
 </head>
 
 <body>
@@ -62,45 +62,49 @@ if (isset($_POST['submit'])) {
             <h1> Add New Accounts</h1>
         </header>
 
-        <form method="POST">
-            <aside>
-                <input type="text" placeholder="Steve" name="firstName" required autocomplete="off" />
-                <input type="text" placeholder="Jobs" name="lastName" />
-            </aside>
+        <section class="form">
+            <form method="POST">
+                <aside>
+                    <input type="text" placeholder="Steve" name="firstName" required autocomplete="off" />
+                    <input type="text" placeholder="Jobs" name="lastName" />
+                </aside>
 
-            <aside>
-                <input type="email" name="email" placeholder="name@gmail.com" required>
-            </aside>
+                <aside>
+                    <label> Email
+                        <input type="email" name="email" placeholder="name@gmail.com"  required>
+                    </label>
+                </aside>
 
-            <aside>
-                <label>Mobile
-                    <input type="text" name="mobile" placeholder="0777...." required>
-                </label>
-            </aside>
+                <aside>
+                    <label>Mobile
+                        <input type="text" name="mobile" placeholder="0777...." required>
+                    </label>
+                </aside>
 
-            <aside>
-                <label>Male <input type="radio" name="gender" value="Male" checked /></label>
-                <label> Female <input type="radio" name="gender" value="Female" /></label>
-            </aside>
+                <aside>
+                    <label>Male <input type="radio" name="gender" value="Male" checked /></label>
+                    <label> Female <input type="radio" name="gender" value="Female" /></label>
+                </aside>
 
-            <aside>
-                <label> Account Number
-                    <input type="number" name="accountNumber" placeholder="1223333993" required>
-                </label>
-            </aside>
+                <aside>
+                    <label> Account Number
+                        <input type="number" name="accountNumber" placeholder="1223333993" required>
+                    </label>
+                </aside>
 
-            <aside>
-                <label> Initial Balance
-                    <input type="number" name="balance" min="0" value="0" />
-                </label>
-            </aside>
+                <aside>
+                    <label> Initial Balance
+                        <input type="number" name="balance" min="0" value="0" />
+                    </label>
+                </aside>
 
-            <aside>
-                <button type="submit" name="submit">Save </button>
-                <button onclick="window.location.href='customerAccounts.php'">Cancel </button>
+                <aside>
+                    <button type="submit" name="submit">Save </button>
+                    <button onclick="window.location.href='customerAccounts.php'">Cancel </button>
 
-            </aside>
-        </form>
+                </aside>
+            </form>
+        </section>
     </main>
 </body>
 

@@ -9,18 +9,18 @@ include 'DBconnection.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- 
+
     <link rel="stylesheet" href="Styling/nav.css">
     <link rel="stylesheet" href="Styling/header.css">
     <link rel="stylesheet" href="Styling/main.css">
-     <link rel="stylesheet" href="Styling/customerAcc.css" />
+    <link rel="stylesheet" href="Styling/customerAcc.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="Scripting/header.js" defer> </script>
+    <script src="Scripting/header.js" defer> </script>
 </head>
 
 <body>
-     <nav>
+    <nav>
         <ul>
             <li> <a href="dashboard.php"> <span class="material-symbols-outlined icons">dashboard</span> Dashboard </a>
             </li>
@@ -34,14 +34,14 @@ include 'DBconnection.php';
 
     <main>
 
-         <header>
-        <aside>
-            <button>
-                <span class="material-symbols-outlined defaultIcon"> menu </span>
-                <span class="material-symbols-outlined closeIcon"> close </span>
-            </button>
-        </aside>
-               <h1> Registered Customers</h1>
+        <header>
+            <aside>
+                <button>
+                    <span class="material-symbols-outlined defaultIcon"> menu </span>
+                    <span class="material-symbols-outlined closeIcon"> close </span>
+                </button>
+            </aside>
+            <h1> Registered Customers</h1>
         </header>
 
         <div>
@@ -96,15 +96,13 @@ include 'DBconnection.php';
                                 <td data-desc="Gender">' . $genderIn . '</td>
                                 <td data-desc="Operations"> 
                                     <a href="updateCustomer.php?updateID=' . $id . '"> <i class="fa-solid fa-pen-to-square"> </i> </a>
-                                    <a href="deleteCustomer.php?deleteID=' . $id . '"> <i class="fa-solid fa-trash"></i>  </a> 
-                                                        
+                                    <a href="deleteCustomer.php?deleteID=' . $id . '"> <i class="fa-solid fa-trash"></i>  </a>
                                 </td>
                             </tr>
                         ';
                         }
                     }
                     ?>
-
                 </tbody>
             </table>
         </section>

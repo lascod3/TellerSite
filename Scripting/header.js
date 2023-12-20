@@ -12,7 +12,7 @@ menuButton.addEventListener("click", (event) => {
     closeBtn.classList.add("closeIconToggle");
     closeBtn.animate({ transform: "rotateZ(90deg)" }, 100);
     nav.classList.add("navToggle");
-    nav.animate({ opacity: ["0", "1"] }, 500);
+    nav.animate({ opacity: ["0", "1"], transform:["translateX(-100px)", "translateX(0px)"] }, 500);
   } else {
     defaultIcon.classList.replace("closeIcon", "defaultIcon");
     defaultIcon.animate({ transform: "rotateZ(-90deg)" }, 100);

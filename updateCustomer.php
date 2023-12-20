@@ -32,12 +32,24 @@ if (isset($_POST['submit'])) {
     <title>Document</title>
     <link rel="stylesheet" href="Styling/header.css">
     <link rel="stylesheet" href="Styling/main.css">
-    <link rel="stylesheet" href="Styling/update.css">
+    <link rel="stylesheet" href="Styling/transDelUp.css">
+    <link rel="stylesheet" href="Styling/nav.css">
     <script src="Scripting/header.js" defer> </script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li> <a href="dashboard.php"> <span class="material-symbols-outlined icons">dashboard</span> Dashboard </a>
+            </li>
+            <li> <a href="customerAccounts.php"> <span class="material-symbols-outlined icons">person_search</span>Customers</a> </li>
+
+            <li> <a href="transaction.php"> <span class="material-symbols-outlined icons">receipt_long</span>
+                    Transaction </a>
+            </li>
+        </ul>
+    </nav>
 
     <main>
         <header>
@@ -64,47 +76,50 @@ if (isset($_POST['submit'])) {
         $genderIn = $row['gender'];
 
         ?>
-        <form method="POST">
-            <aside>
-                <input type="text" value="<?php echo  $firstNameIn ?>" name="firstName" required autocomplete="off" />
-                <input type="text" value="<?php echo  $lastNameIn ?>" name="lastName" />
-            </aside>
 
-            <aside>
-                <input type="email" name="email" value="<?php echo  $emailIn ?>" required>
-            </aside>
+        <section class="form">
+            <form method="POST">
+                <aside>
+                    <input type="text" value="<?php echo  $firstNameIn ?>" name="firstName" required autocomplete="off" />
+                    <input type="text" value="<?php echo  $lastNameIn ?>" name="lastName" />
+                </aside>
 
-            <aside>
-                <label>Mobile
-                    <input type="number" name="mobile" value="<?php echo  $mobileIn ?>" required>
-                </label>
-            </aside>
+                <aside>
+                    <label> Email
+                        <input type="email" name="email" value="<?php echo  $emailIn ?>" required>
+                    </label>
+                </aside>
 
-            <aside>
-                <label>Male <input type="radio" name="gender" value="Male" <?php echo ($row['gender'] == 'Male') ? "checked" : ""; ?> checked /></label>
-                <label> Female <input type="radio" name="gender" value="Female" <?php echo ($row['gender'] == 'Female') ? "checked" : ""; ?> /></label>
-            </aside>
+                <aside>
+                    <label>Mobile
+                        <input type="number" name="mobile" value="<?php echo  $mobileIn ?>" required>
+                    </label>
+                </aside>
 
-            <aside>
-                <label> Account Number
-                    <input type="number" name="accountNumber" value="<?php echo $accountNumber ?>" />
-                </label>
-            </aside>
+                <aside>
+                    <label>Male <input type="radio" name="gender" value="Male" <?php echo ($row['gender'] == 'Male') ? "checked" : ""; ?> checked /></label>
+                    <label> Female <input type="radio" name="gender" value="Female" <?php echo ($row['gender'] == 'Female') ? "checked" : ""; ?> /></label>
+                </aside>
 
-            <aside>
-                <label> Initial Balance
-                    <input type="number" name="balance" min="0" value="<?php echo $balanceIn ?>" />
-                </label>
-            </aside>
+                <aside>
+                    <label> Account Number
+                        <input type="number" name="accountNumber" value="<?php echo $accountNumber ?>" />
+                    </label>
+                </aside>
 
-            <aside>
-                <button type="submit" name="submit">Update </button>
-                <a href="customerAccounts.php"> Cancel </a>
-            </aside>
+                <aside>
+                    <label> Initial Balance
+                        <input type="number" name="balance" min="0" value="<?php echo $balanceIn ?>" />
+                    </label>
+                </aside>
 
-            <!-- <button onclick="window.location.href='customerAccounts.php'">Cancel </button> -->
+                <aside>
+                    <button type="submit" name="submit">Update </button>
+                    <a href="customerAccounts.php"> Cancel </a>
+                </aside>
 
-        </form>
+            </form>
+        </section>
     </main>
 </body>
 

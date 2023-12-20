@@ -1,15 +1,22 @@
 main {
   padding: 0.2rem 0.5rem;
-  min-width: 85vw;
+  min-width: 85vmax;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: rgb(231, 231, 231);
+}
+
+body {
   background: rgba(251, 252, 252, 255);
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 /* Rules for Mobile Screen Size */
 @media screen and (max-width: 768px) {
-  header aside button { 
+  header aside button {
     visibility: visible;
   }
   header {
@@ -17,5 +24,13 @@ main {
     display: flex;
     justify-content: left;
     gap: 5rem;
+  }
+
+  main {
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  main {
+    padding: 0;
   }
 }

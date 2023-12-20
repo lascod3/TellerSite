@@ -11,8 +11,8 @@ body {
 }
 
 main ul {
-  min-height: 25vh;
-  min-width: 100%;
+  min-height: inherit;
+  min-width: inherit;
   padding: 20px;
   display: flex;
   justify-content: space-around;
@@ -26,21 +26,24 @@ main ul li {
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+  background: rgb(231,231,231);
+}
+
+main ul li span:last-child{
+    font-size: clamp(0.5rem, 3vw, 2em);
 }
 
 ul li span.icon1 {
-  font-size: clamp(2rem, 7vw, 3em);
+  font-size: clamp(2rem, 7vw, 4em);
   color: rgb(99, 99, 99);
 }
 
 ul li span.icon2 {
-  font-size: clamp(2rem, 7vw, 3em);
-  /* color: rgb(231,231,231); */
+  font-size: clamp(2rem, 7vw, 4em);
 }
 
 main ul li:nth-child(1) {
   border-radius: 10%;
-  background: rgb(231, 231, 231);
   border-left: 3px ridge rgb(37, 36, 43);
   border-top: 3px ridge rgb(37, 36, 43);
   border-right: 3px ridge rgba(25, 43, 161, 255);
@@ -49,37 +52,9 @@ main ul li:nth-child(1) {
 
 main ul li:nth-child(2) {
   border-radius: 10%;
-  border-left: 3px ridge rgb(37, 36, 43);
-  border-top: 3px ridge rgb(37, 36, 43);
-  border-right: 3px ridge rgba(25, 43, 161, 255);
-  border-bottom: 3px ridge rgba(25, 43, 161, 255);
+  border-left: 3px ridge rgba(25, 43, 161, 255);  
+  border-top: 3px ridge rgba(25, 43, 161, 255); 
+  border-right: 3px ridge rgb(37, 36, 43);
+  border-bottom: 3px ridge  rgb(37, 36, 43);
 }
 
-main ul li:nth-child(3) {
-  border-radius: 50%;
-  padding: 75px;
-  background: gray;
-}
-
-/* Mobile Screen Size */
-/* @media screen and (max-width: 768px) {
-  main {
-    padding: none;
-  
-  }
-
-  main ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-  }
- 
-   .navToggle {
-  list-style: none;
-  min-width: inherit;
-  min-height: 35vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-   }
-} */
