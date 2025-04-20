@@ -5,34 +5,26 @@ Due to time constraints, this version uses basic HTML and CSS for the front end,
 
 This project can be adapted to manage clientele and merchandise in real-world small business environments.
 
+
 Features
 Add new client records
-
 View and list existing client information
-
 Edit client details
-
 Delete client entries
-
 MySQL database integration
-
 Simple UI with core functionality emphasis
 
 Setup Instructions
 To run this project locally, follow the steps below:
-
 Download and install a local server such as XAMPP or WAMP.
-
 Start the Apache server and MySQL database from the control panel.
-
 Navigate to the htdocs directory (usually located in the XAMPP installation folder).
 
 Open a terminal or command prompt in the htdocs directory.
-
 Run the following command to clone the repository:
 git clone https://github.com/lask0d3/TellerSite.git
 
-mport the MySQL database file (if provided) into phpMyAdmin or create the necessary tables manually.
+Import the MySQL database file (if provided) into phpMyAdmin or create the necessary tables manually.
 
 In your browser, go to:
 http://localhost/TellerSite/dashboard.php
