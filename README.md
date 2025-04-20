@@ -7,18 +7,18 @@ This project can be adapted to manage clientele and merchandise in real-world sm
 
 
 Features
-Add new client records
-View and list existing client information
-Edit client details
-Delete client entries
-MySQL database integration
-Simple UI with core functionality emphasis
+1. Add new client records
+2. View and list existing client information
+3. Edit client details
+4. Delete client entries
+5. MySQL database integration
+6. Simple UI with core functionality emphasis
 
 Setup Instructions
-To run this project locally, follow the steps below:
-Download and install a local server such as XAMPP or WAMP.
-Start the Apache server and MySQL database from the control panel.
-Navigate to the htdocs directory (usually located in the XAMPP installation folder).
+1. To run this project locally, follow the steps below:
+2. Download and install a local server such as XAMPP or WAMP.
+3. Start the Apache server and MySQL database from the control panel.
+4. Navigate to the htdocs directory (usually located in the XAMPP installation folder).
 
 Open a terminal or command prompt in the htdocs directory.
 Run the following command to clone the repository:
