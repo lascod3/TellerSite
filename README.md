@@ -1,17 +1,28 @@
-This is a straightforward Crud website that let users add, read, edit, and remove client information from the database.
-Due to time constraints, I did not use any frontend frames(only css), so the focus was rather functionalities, but I will be rewriting it using React. 
-Its operations can be used to monitor clientele and merchandise in the real world.
+TellerSite is a straightforward CRUD (Create, Read, Update, Delete) web application that allows users to manage client information efficiently. The system interacts with a MySQL database and provides basic functionalities to add, view, edit, and delete client data.
 
-Steps to launch it
+Due to time constraints, no front-end frameworks were used—only basic HTML and CSS—with the primary focus placed on functionality and backend logic. However, a future version of the project will be rewritten using React for a more dynamic and modern UI.
 
-1. A local server, such as WAMP or Xampp (https://www.apachefriends.org/) is required.
-2- Following downloading and installing, launch MySQL database and Apache server.
-3-Go to the htdocs directory, which is located in the Xampp folder.
-4-Change your directory to the htdocs.
-5-Use git clone https://github.com/lask0d3/TellerSite.git to clone this repository.
-6-After cloning, search Localhost/TellerSite/dashboard.php in your browser.
+The application can be adapted for real-world use to track clientele and merchandise.
 
 
+Features
+Add new client records
+View client list
+Update client information
+Delete client entries
+Simple and clean interface
+PHP + MySQL powered backend
+
+🚀 Getting Started
+To run this project locally, follow the steps below:
+Install a local server such as XAMPP or WAMP.
+Start both the Apache server and MySQL database.
+Navigate to the htdocs directory inside your XAMPP folder.
+Open a terminal and change directory to htdocs:
+
+cd path/to/xampp/htdocs
+git clone https://github.com/lask0d3/TellerSite.git
+http://localhost/TellerSite/dashboard.php
 
 
 https://github.com/lask0d3/TellerSite/assets/57866950/f37ec392-8f85-49d6-9e1f-d18e40630195
